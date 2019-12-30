@@ -1,0 +1,110 @@
+* {
+  font-family: "Kulim Park", sans-serif;
+  margin: 0;
+  text-align: center;
+  user-select: none;
+}
+
+body {
+  background-image: radial-gradient(#999, silver);
+}
+
+.rules-chart {
+  border-radius: 50%;
+  width: 140px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: -28px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.scorecards,
+.choices,
+.player-box {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 60%;
+}
+
+.scorecards,
+.player-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+}
+
+.scorecard-name,
+#scorecard1,
+#scorecard2 {
+  font-size: 42px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(5, 21%);
+}
+
+.choices img {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  width: 100%;
+}
+
+.choices img:hover {
+  border-bottom: 2px solid orangered;
+  border-top: 2px solid orangered;
+}
+
+.player-box {
+  height: 100px;
+  margin: 14px auto;
+}
+
+.your-box,
+.sheldon-box {
+  border: 2px solid #666;
+  border-radius: 14px;
+  margin: 0 3px;
+}
+
+.result {
+  height: 42px;
+}
+
+.result-image {
+  width: 70px;
+}
+
+#result {
+  font-size: 35px;
+  height: 42px;
+}
+
+button {
+  background-color: blue;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  font-size: 21px;
+  height: 42px;
+  width: 210px;
+
+  transition: 0.3s border ease-in-out, 0.7s background-color ease-in-out, 1.4s color ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid blue;
+  color: blue;
+}
+
+button:focus {
+  outline: none;
+}
